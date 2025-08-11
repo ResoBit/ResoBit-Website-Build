@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Specific bot permissions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot  
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap location
+Sitemap: https://resobit.com/sitemap.xml
+
+# Allow crawling of all pages
+Allow: /embedded-systems
+Allow: /firmware-development
+Allow: /ecommerce-development
+Allow: /wordpress-development
+Allow: /college-projects
+Allow: /funtech-games
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
