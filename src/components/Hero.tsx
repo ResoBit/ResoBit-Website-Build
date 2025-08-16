@@ -18,7 +18,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background" role="banner" aria-label="Hero section with company introduction">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-24" role="banner" aria-label="Hero section with company introduction">
       {/* Dynamic animated background with gradients */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary to-muted animate-pulse"></div>
