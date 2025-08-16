@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Code } from "lucide-react";
+import { ArrowRight, Zap, Code, Cpu } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -62,11 +62,8 @@ const Hero = () => {
           {/* Brand */}
           <div className="flex items-center justify-center mb-12 animate-fade-in">
             <div className="flex items-center space-x-3 sm:space-x-4 hover-scale">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-accent to-accent-secondary rounded-2xl flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 hover:rotate-3">
-                <img src="/favicon.ico" alt="ResoBit" className="w-6 h-6 sm:w-8 sm:h-8" />
-              </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
-                Reso<span className="bg-gradient-to-r from-accent to-accent-secondary bg-clip-text text-transparent animate-pulse">Bit</span>
+                {/* Reso<span className="bg-gradient-to-r from-accent to-accent-secondary bg-clip-text text-transparent animate-pulse">Bit</span> */}
               </h1>
             </div>
           </div>
@@ -100,7 +97,7 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="w-full sm:w-auto text-lg px-8 py-4 border-2 border-border text-foreground hover:bg-accent hover:text-accent-foreground rounded-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.location.assign('/get-started')}
             >
               Talk to an expert
             </Button>
@@ -110,7 +107,7 @@ const Hero = () => {
           <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto px-2" aria-label="Core services overview">
             <article className="text-center group hover-scale animate-[fade-in_0.8s_ease-out_1.2s_both]">
               <div className="w-12 h-12 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 dark:group-hover:bg-accent/30 transition-all duration-300 group-hover:rotate-6">
-                <img src="/favicon.ico" alt="Embedded Systems icon" className="w-6 h-6" />
+                <Cpu className="w-6 h-6 text-accent" aria-hidden="true" />
               </div>
               <h3 className="font-semibold text-foreground mb-2 group-hover:text-accent transition-colors duration-300">Embedded Systems</h3>
               <p className="text-muted-foreground text-sm">Custom IoT solutions and automation systems for industrial applications</p>

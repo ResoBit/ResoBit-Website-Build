@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Users, Award, Target } from "lucide-react";
+import { MapPin, Users, Target, Clock } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Users, label: "Projects Delivered", value: "500+" },
-    { icon: Award, label: "Years Experience", value: "10+" },
-    { icon: Target, label: "Client Satisfaction", value: "99%" },
-    { icon: MapPin, label: "Based in", value: "Bangalore" }
+    { icon: Users, label: "Core Team", value: "20+" },
+    { icon: Target, label: "Active Projects", value: "8+" },
+    { icon: Clock, label: "Avg. Response Time", value: "< 24h" },
+    { icon: MapPin, label: "Based in", value: "Bengaluru" }
   ];
 
   const technologies = [
@@ -21,34 +21,32 @@ const About = () => {
       <div className="container mx-auto px-6">
         <header className="text-center mb-16">
           <h2 id="about-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            About <span className="text-primary">ResoBit</span>
+            About <span className="text-primary dark:text-accent">ResoBit</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We are a Bangalore-based engineering solutions company passionate about bridging 
-            the gap between innovative hardware and intelligent software.
+            We are a Bengaluru-based startup building reliable engineering solutions that connect
+            innovative hardware with intelligent software. Early-stage, hands-on, and laser‑focused on
+            shipping real value.
           </p>
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <article>
             <h3 className="text-2xl font-bold text-foreground mb-6">
-              Empowering Innovation Through Technology
+              Building With Startup Speed, Delivering With Engineering Rigor
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                ResoBit specializes in delivering comprehensive engineering solutions that span 
-                from low-level embedded systems to sophisticated web applications. Our expertise 
-                lies in creating seamless integrations between hardware and software.
+                We design and build across the stack—from low‑level embedded systems to modern web
+                applications—with an emphasis on pragmatic, production‑ready decisions.
               </p>
               <p>
-                Whether you're a startup looking to prototype your next IoT device, a business 
-                needing a robust e-commerce platform, or a student seeking guidance on your 
-                engineering project, we provide tailored solutions that exceed expectations.
+                As a new team, we prioritize transparency, fast iterations, and strong engineering
+                practices: code reviews, testing, and measurable performance targets.
               </p>
               <p>
-                Our team combines deep technical knowledge with practical industry experience, 
-                ensuring that every project we undertake is built with scalability, reliability, 
-                and innovation at its core.
+                Whether you need a proof‑of‑concept, a pilot deployment, or a production rollout,
+                we align with your milestones and communicate clearly, every step of the way.
               </p>
             </div>
           </article>
@@ -101,7 +99,7 @@ const About = () => {
               <Badge 
                 key={index} 
                 variant="secondary" 
-                className="px-4 py-2 text-sm bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+                className="px-4 py-2 text-sm bg-muted/40 dark:bg-muted/80 text-foreground dark:text-white hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
               >
                 {tech}
               </Badge>

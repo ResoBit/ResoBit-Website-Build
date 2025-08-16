@@ -27,23 +27,19 @@ const Header = () => {
     const controlHeader = () => {
       const currentScrollY = window.scrollY;
       const isMobile = window.innerWidth < 768;
-      
+
       if (isMobile) {
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
-          setIsVisible(false);
-        } else {
-          setIsVisible(true);
-        }
+        setIsVisible(true); // Always visible on mobile
       } else {
         setIsVisible(true);
       }
-      
+
       setLastScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', controlHeader);
     window.addEventListener('resize', controlHeader);
-    
+
     return () => {
       window.removeEventListener('scroll', controlHeader);
       window.removeEventListener('resize', controlHeader);
@@ -69,7 +65,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border transition-transform duration-300 before:content-[''] before:absolute before:inset-x-0 before:bottom-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-accent/40 before:to-transparent ${
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-background/90 md:bg-background/80 backdrop-blur-md border-b border-border transition-transform duration-300 before:content-[''] before:absolute before:inset-x-0 before:bottom-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-accent/40 before:to-transparent ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <nav className="container mx-auto px-6 py-4">
@@ -112,7 +108,7 @@ const Header = () => {
             <ThemeToggle />
             <Button 
               variant="hero"
-              onClick={() => handleNavigation('#contact')}
+              onClick={() => handleNavigation('/get-started', true)}
               className="ml-4"
             >
               Get Started
@@ -161,7 +157,7 @@ const Header = () => {
               </div>
               <Button 
                 variant="hero"
-                onClick={() => handleNavigation('/about', true)}
+                onClick={() => handleNavigation('/get-started', true)}
                 className="w-full mt-4"
               >
                 Get Started

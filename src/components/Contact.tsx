@@ -45,7 +45,7 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.projectDetails || !formData.phone) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.projectDetails) {
       toast({
         title: "Missing Information",
         description: "Please fill in all required fields.",
@@ -54,7 +54,7 @@ const Contact = () => {
       return;
     }
 
-    if (!/^\d{10}$/.test(formData.phone)) {
+    if (formData.phone && !/^\d{10}$/.test(formData.phone)) {
       toast({
         title: "Invalid Phone Number",
         description: "Enter a valid 10-digit mobile number.",
@@ -140,7 +140,7 @@ const Contact = () => {
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center mb-20">
           <div className="inline-block mb-6">
-            <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full border border-primary/20">
+            <span className="px-4 py-2 bg-primary/10 dark:bg-primary/40 text-primary dark:text-primary-foreground text-sm font-medium rounded-full border border-primary/20 dark:border-primary/40">
               Let's Connect
             </span>
           </div>
@@ -258,7 +258,7 @@ const Contact = () => {
 
                 <div className="space-y-2">
                   <label className="text-sm font-semibold text-foreground">
-                    Phone Number *
+                    Phone Number
                   </label>
                   <div className="grid grid-cols-[120px,1fr] gap-3">
                     <Select
@@ -288,7 +288,6 @@ const Contact = () => {
                       inputMode="numeric"
                       pattern="\d{10}"
                       maxLength={10}
-                      required
                       className="h-12 border-border/60 focus:border-primary focus:ring-primary/20 bg-background/50"
                     />
                   </div>

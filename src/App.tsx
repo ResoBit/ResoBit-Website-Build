@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import AboutContact from "./pages/AboutContact";
 import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
+import GetStarted from "./pages/GetStarted";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,8 @@ const App = () => (
           <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
           <Route path="/wordpress-development" element={<WordPressDevelopment />} />
           <Route path="/funtech-games" element={<FuntechGames />} />
+          <Route path="/get-started" element={<GetStarted />} />
+          {/* <Route path="/contact" element={<ContactPage />} /> */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -296,7 +296,7 @@ const FuntechGames = () => {
           </p>
           <Button 
             size="lg" 
-            onClick={() => navigate('/#contact')}
+            onClick={() => navigate('/get-started')}
             className="bg-gradient-to-r from-accent to-accent-secondary hover:from-accent-secondary hover:to-accent-tertiary"
           >
             Start Your Game Project

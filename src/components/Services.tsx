@@ -83,7 +83,7 @@ const Services = () => {
             >
               <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{boxShadow: '0 0 0 1px hsl(var(--accent) / 0.15), 0 8px 30px hsl(var(--accent) / 0.15)'}} />
               <CardHeader className="text-center pb-4">
-                <div className={`w-16 h-16 mx-auto bg-gradient-to-r ${service.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg ring-2 ring-transparent group-hover:ring-accent/30`}>
+                <div className={`w-16 h-16 mx-auto bg-gradient-to-br from-accent to-accent-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg ring-2 ring-transparent group-hover:ring-accent/30`}>
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-bold text-card-foreground group-hover:text-primary transition-colors">

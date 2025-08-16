@@ -127,7 +127,7 @@ const CollegeProjects = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold text-text-black mb-6">
-              College Project <span className="text-primary">Development</span>
+              College Project Development
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -157,7 +157,7 @@ const CollegeProjects = () => {
       <section className="py-16 px-6">
         <div className="container mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-text-black text-center mb-12">
-            Project <span className="text-primary">Categories</span>
+            Project Categories
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -211,7 +211,7 @@ const CollegeProjects = () => {
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-text-black mb-4">
-                Start Your <span className="text-primary">Project</span>
+                Start Your Project
               </h2>
               <p className="text-muted-foreground">
                 Fill out the form below and we'll get back to you with a detailed proposal within 24 hours.
@@ -247,7 +247,7 @@ const CollegeProjects = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="college" className="text-text-black-soft">College/University *</Label>
                       <Input
@@ -270,10 +270,10 @@ const CollegeProjects = () => {
                         className="border-border focus:border-primary"
                       />
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
+                    {/* <div className="space-y-2">
                       <Label htmlFor="year" className="text-text-black-soft">Year of Study *</Label>
                       <select
                         id="year"
@@ -290,7 +290,7 @@ const CollegeProjects = () => {
                         <option value="4th Year">4th Year</option>
                         <option value="Final Year">Final Year</option>
                       </select>
-                    </div>
+                    </div> */}
                     <div className="space-y-2">
                       <Label htmlFor="projectType" className="text-text-black-soft">Project Type *</Label>
                       <select
@@ -339,7 +339,7 @@ const CollegeProjects = () => {
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="timeline" className="text-text-black-soft">Project Timeline</Label>
                       <select
@@ -372,7 +372,7 @@ const CollegeProjects = () => {
                         <option value="₹50,000+">₹50,000+</option>
                       </select>
                     </div>
-                  </div>
+                  </div> */}
 
                   <Button 
                     type="submit" 
@@ -390,7 +390,7 @@ const CollegeProjects = () => {
               </p>
               <a 
                 href="mailto:info@resobit.com" 
-                className="text-primary hover:text-primary-dark font-medium text-lg transition-colors"
+                // className="text-primary hover:text-primary-dark font-medium text-lg transition-colors"
               >
                 info@resobit.com
               </a>

@@ -182,7 +182,7 @@ const EmbeddedSystems = () => {
           </p>
           <Button 
             size="lg" 
-            onClick={() => navigate('/#contact')}
+            onClick={() => navigate('/get-started')}
             className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-secondary"
           >
             Get Started Today
